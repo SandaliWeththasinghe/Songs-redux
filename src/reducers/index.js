@@ -11,6 +11,7 @@ const songReducer = () => {
 
 const selectedSongReducer = (selectedSong = null, action) => {
   if (action.type === 'SONG_SELECTED') {
+    console.log("selected song reducer ",action);
     return action.payload;
   }
 
